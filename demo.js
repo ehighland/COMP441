@@ -20,16 +20,12 @@ function addfave(x){
 	}
 	
 	return faves;
-}
 
-function postfave(){
-	faves = addfave(x);
-	
 	for i in faves{
-		var node = document.createElement("li");                 // Create a <li> node
-		var textnode = document.createTextNode(i);         // Create a text node
-		node.appendChild(textnode);                              // Append the text to <li>
-		document.getElementById("favlist").appendChild(node);     // Append <li> to <ul> with id="myList"
+		var node = document.createElement("li");
+		var textnode = document.createTextNode(i); 
+		node.appendChild(textnode);
+		document.getElementById("favlist").appendChild(node);     
 	}
 	
 }
