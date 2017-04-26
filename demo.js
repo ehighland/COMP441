@@ -7,20 +7,23 @@ function addfave(x){
 	var faves = []
 	
 	if (x == "Boyd"){
-		article = article[0];
-		faves.concat(article);
+		article0 = article[0];
+		faves.concat(article0);
 	}
-	else if (x == "Wheeler"){
-		article = article[1];
-		faves.concat(article);
+	
+	if (x == "Wheeler"){
+		article1 = article[1];
+		faves.concat(article1);
 	}
-	else if (x == "Zhou"){
-		article = article[2];
-		faves.concat(article);
+	
+	if (x == "Zhou"){
+		article2 = article[2];
+		faves.concat(article2);
 	}
-	else if (x == "ISC"){
-		article = article[3];
-		faves.concat(article);
+	
+	if (x == "ISC"){
+		article3 = article[3];
+		faves.concat(article3);
 	}
 	
 	console.log(faves);
