@@ -33,5 +33,4 @@ function postfave(){
 	var textnode = document.createTextNode(faves); 
 	node.appendChild(textnode);
 	document.getElementById("favlist").appendChild(node);     
-	}
 };
