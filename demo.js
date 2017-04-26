@@ -24,12 +24,13 @@ function addfave(x){
 	faves.toString();
 	
 	localStorage.setItem("faves", faves);
-}
+};
 
 function postfave(){
 	var faves = localStorage.getItem("faves");
 	console.log(faves);
 	faves = faves.split(",");
+	console.log(faves);
 	for (i in fav){
 		console.log(i);
 		var node = document.createElement("li");
@@ -37,4 +38,4 @@ function postfave(){
 		node.appendChild(textnode);
 		document.getElementById("favlist").appendChild(node);     
 	}
-}
+};
