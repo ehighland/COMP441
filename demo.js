@@ -29,9 +29,7 @@ function addfave(x){
 function postfave(){
 	var faves = localStorage.getItem("faves");
 	console.log(faves);
-	faves = faves.split(",");
-	console.log(faves);
-	for (i in fav){
+	for (i in faves){
 		console.log(i);
 		var node = document.createElement("li");
 		var textnode = document.createTextNode(i); 
