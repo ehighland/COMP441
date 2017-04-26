@@ -1,0 +1,138 @@
+body {
+	margin: 5px;
+	background-color: #FFFFFF;
+	font-family: "Lucida Console", Monaco, monospace;
+}
+
+body p {
+	padding: 20px;
+	margin-left: 100px;
+}
+
+header {
+	background-image: url(header.png);
+	background-repeat: no-repeat;
+	z-index: 0;
+	padding: 20px;
+	text-align: center;
+	font-size: 30pt;
+	height: 200px;
+	margin-top: 0;
+	margin-left: 30px;
+}
+
+header p {
+	padding: 5px;
+	z-index: 1;
+}
+
+a {
+	text-decoration: none;
+	color: #a11621;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #a11621;
+}
+
+#returnhome {
+	font-size: 12pt;
+	margin-top: 100px;
+	position: absolute;
+}
+
+#returnhome a {
+	color: #FFFFFF;
+}
+
+#returnhome p {
+	margin-left: 25px;
+}
+
+#corner {
+	float: right;
+	text-align: right;
+	margin-right: 50px;
+	font-size: 18pt;
+}
+
+#alldocs {
+	float: left;
+	text-align: center;
+	margin-left: 30px;
+	margin-top: 50px;
+}
+
+#recentadd {
+	float: left;
+	text-align: center;
+	margin-left: 50px;
+	margin-top: 150px;
+}
+
+#recentread {
+	float: left;
+	text-align: center;
+	margin-left: 50px;
+	margin-top: 50px;
+}
+
+#fav {
+	float: left;
+	text-align: center;
+	margin-left: 50px;
+	margin-top: 150px;
+}
+
+#mine {
+	float: left;
+	text-align: center;
+	margin-left: 50px;
+	margin-top: 50px;
+}
+
+#article {
+	float: right;
+	padding: 20px;
+	margin-top: 0;
+	font-size: 14pt;
+}
+
+input[type=radio   ]:not(old){
+	width: 2em;
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+	opacity: 0;
+}
+
+input[type=radio   ]:not(old) + label{
+	display: inline-block;
+	margin-left: -2em;
+	line-height: 1.5em;
+}
+
+input[type=radio]:not(old) + label > span{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border: 2px solid #a11621;
+	border-radius: 5px;
+	background: #FFFFFF
+	vertical-align: bottom;
+}
+
+input[type=radio]:not(old):checked + label > span > span{
+	display: block;
+	width: 7px;
+	height: 5px;
+	margin: 2px;
+	border: 1px solid #FFFFFF;
+	border-radius: 5px;
+	background: #a11621;
+}
+
+#myform {
+	margin-left: 10%;
+}
