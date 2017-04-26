@@ -10,18 +10,15 @@ function addfave(x){
 		article0 = article[0];
 		faves.concat(article0);
 	}
-	
-	if (x == "Wheeler"){
+	else if (x == "Wheeler"){
 		article1 = article[1];
 		faves.concat(article1);
 	}
-	
-	if (x == "Zhou"){
+	else if (x == "Zhou"){
 		article2 = article[2];
 		faves.concat(article2);
 	}
-	
-	if (x == "ISC"){
+	else if (x == "ISC"){
 		article3 = article[3];
 		faves.concat(article3);
 	}
