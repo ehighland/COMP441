@@ -21,7 +21,7 @@ function addfave(x){
 	
 	return faves;
 
-	for i in faves{
+	for (i in faves){
 		var node = document.createElement("li");
 		var textnode = document.createTextNode(i); 
 		node.appendChild(textnode);
