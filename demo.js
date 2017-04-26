@@ -29,11 +29,9 @@ function addfave(x){
 function postfave(){
 	var faves = localStorage.getItem("faves");
 	console.log(faves);
-	for (i in faves){
-		console.log(i);
-		var node = document.createElement("li");
-		var textnode = document.createTextNode(i); 
-		node.appendChild(textnode);
-		document.getElementById("favlist").appendChild(node);     
+	var node = document.createElement("li");
+	var textnode = document.createTextNode(faves); 
+	node.appendChild(textnode);
+	document.getElementById("favlist").appendChild(node);     
 	}
 };
