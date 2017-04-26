@@ -20,13 +20,12 @@ function addfave(x){
 	}
 	
 	console.log(faves);
-	window.localStorage.setItem("faves", JSON.stringify(faves));
+	localStorage.setItem("faves", faves);
 }
 
 function postfave(){
-	var faves = JSON.parse(window.localStorage.getItem("faves"));
+	var faves = localStorage.getItem("faves");
 	console.log(faves)
-	var fav = faves.split(',');
 	for (i in fav){
 		console.log(i);
 		var node = document.createElement("li");
