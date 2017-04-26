@@ -136,3 +136,12 @@ input[type=radio]:not(old):checked + label > span > span{
 #myform {
 	margin-left: 10%;
 }
+
+#artimg {
+	border: 1px solid transparent;
+}
+
+#artimg:hover{
+	border: 1px solid #a11621;
+	border-radius: 5px;
+}

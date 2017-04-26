@@ -7,15 +7,29 @@ function addfave(x){
 	var faves = []
 	
 	if (x == "Boyd"){
-		faves.push(article[0])
+		faves.push(article[0]);
 	}
 	else if (x == "Wheeler"){
-		faves.push(article[1])
+		faves.push(article[1]);
 	}
 	else if (x == "Zhou"){
-		faves.push(article[2])
+		faves.push(article[2]);
 	}
 	else if (x == "ISC"){
-		faves.push(article[3])
+		faves.push(article[3]);
 	}
+	
+	return faves;
+}
+
+function postfave(){
+	faves = addfave(x);
+	
+	for i in faves{
+		var node = document.createElement("li");                 // Create a <li> node
+		var textnode = document.createTextNode(i);         // Create a text node
+		node.appendChild(textnode);                              // Append the text to <li>
+		document.getElementById("favlist").appendChild(node);     // Append <li> to <ul> with id="myList"
+	}
+	
 }
