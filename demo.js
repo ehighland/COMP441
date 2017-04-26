@@ -1,16 +1,3 @@
-var http = require("http");
-
-http.createServer(function (request, response) {
-
-   // Send the HTTP header 
-   // HTTP Status: 200 : OK
-   // Content Type: text/plain
-   response.writeHead(200, {'Content-Type': 'text/plain'});
-}).listen(8081);
-
-// Console will print the message
-console.log('Server running at http://127.0.0.1:8081/');
-
 function addfave(x){
 	var articles = ['Boyd, K. et al.\n"Finding Function in the Unknown." Proceedings - 2015 IEEE International Conference on Bioinformatics and Biomedicine, BIBM 2015.',
 	'Wheeler, H. et al.\n"Survey of the Heritability and Sparse Architecture of Gene Expression Traits across Human Tissues." Ed. Stephen B Montgomery. PLOS Genetics 12.11 (2016): e1006423.1',
