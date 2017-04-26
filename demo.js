@@ -19,13 +19,18 @@ function addfave(x){
 		faves.push(article[3]);
 	}
 	
-	return faves;
+	console.log(faves);
+	window.localStorage.setItem("faves", JSON.stringify(faves));
+}
 
-	for (i in faves){
+function postfave(){
+	var faves = JSON.parse(window.localStorage.getItem("faves"));
+	var fav = faves.split(',');
+	for (i in fav){
+		console.log(i);
 		var node = document.createElement("li");
 		var textnode = document.createTextNode(i); 
 		node.appendChild(textnode);
 		document.getElementById("favlist").appendChild(node);     
 	}
-	
 }
