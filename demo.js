@@ -61,18 +61,18 @@ function postfave(){
 function read(){
 	if(document.getElementById('Wheeler, H. et al.').checked) {
 		console.log("Wheeler");
-		$("#articles").html("<iframe width='100%' height='600px' src='Wheeler.pdf'></iframe>");
+		$("#articles").html("<iframe width='100%' height='800px' src='Wheeler.pdf'></iframe>");
       }
     else if(document.getElementById('Boyd, K. et al.').checked) {
     	console.log("Boyd");
-    	$("#articles").html("<iframe width='100%' height='600px' src='Boyd.pdf'></iframe>");
+    	$("#articles").html("<iframe width='100%' height='800px' src='Boyd.pdf'></iframe>");
     }
     else if(document.getElementById('Zhou, X. et al.').checked) {
     	console.log("Zhou");
-    	$("#articles").html("<iframe width='100%' height='600px' src='Zhou.pdf'></iframe>");
+    	$("#articles").html("<iframe width='100%' height='800px' src='Zhou.pdf'></iframe>");
     }
     else {
     	console.log("ISC");
-    	$("#articles").html("<iframe width='100%' height='600px' src='ISC.pdf'></iframe>");
+    	$("#articles").html("<iframe width='100%' height='800px' src='ISC.pdf'></iframe>");
     }
 };
