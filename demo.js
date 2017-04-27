@@ -45,6 +45,7 @@ function postfave(){
 				var textnode = document.createTextNode(faves[i]); 
 				node.appendChild(textnode);
 				document.getElementById("favlist").appendChild(node);
+				document.getElementById("favlist").appendChild('<br />');
 			}
 		}
 	}
