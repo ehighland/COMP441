@@ -8,8 +8,7 @@
 <link rel="stylesheet" type="text/css" href="demo2.css">
 <!-- javascript -->
 <script type="text/javascript" src="demo.js"></script>
-<!-- python -->
-<script type="text/python" src="demo.py"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 </head>
 <body>
 <header>
@@ -29,36 +28,37 @@ My Library<br /><span style="font-size: 16pt !important;">all documents</span>
 <br />
 Choose a document to read:</p>
 <div id="articles">
-<form method="post" action="article.php">
+<form>
 <div id="myform">
 <img src="addfav.png" width="20px" height="20px" onclick="addfave(0)" id="artimg">
-<input id="Wheeler, H. et al." type="radio" name="article" value="option">
+<input id="Boyd, K. et al." type="radio" name="article" value="Boyd">
 <label for="option"><span><span></span></span> Boyd, K. et al.</label>
 <br />
 "Finding Function in the Unknown." Proceedings - 2015 IEEE International Conference on Bioinformatics and Biomedicine, BIBM 2015.
 <br />
 <br />
 <img src="addfav.png" width="20px" height="20px" onclick="addfave(1)" id="artimg">
-<input id="Wheeler, H. et al." type="radio" name="article" value="option">
+<input id="Wheeler, H. et al." type="radio" name="article" value="Wheeler">
 <label for="option"><span><span></span></span> Wheeler, H. et al.</label>
 <br />
 "Survey of the Heritability and Sparse Architecture of Gene Expression Traits across Human Tissues." Ed. Stephen B Montgomery. PLOS Genetics 12.11 (2016): e1006423
 <br />
 <br />
 <img src="addfav.png" width="20px" height="20px" onclick="addfave(2)" id="artimg">
-<input id="Zhou, X. et al." type="radio" name="article" value="option">
+<input id="Zhou, X. et al." type="radio" name="article" value="Zhou">
 <label for="option"><span><span></span></span> Zhou, X. et al.</label>
 <br />
 "Polygenic Modeling with Bayesian Sparse Linear Mixed Models." Ed. Peter M. Visscher. PLoS Genetics 9.2 (2013): e1003264.
 <br /><br />
 <img src="addfav.png" width="20px" height="20px" onclick="addfave(3)" id="artimg">
-<input id="The International Schizophrenia Consortium" type="radio" name="article" value="option">
+<input id="The International Schizophrenia Consortium" type="radio" name="article" value="ISC">
 <label for="option"><span><span></span></span>The International Schizophrenia Consortium</label>
 <br />
 "Common Polygenic Variation Contributes to Risk of Schizophrenia and Bipolar Disorder." Nature 460 (2009).
 <br />
 <br />
-<input type="submit" name="select" value="Choose Article">
+<!-- <input type="submit" value="Choose Article"> -->
+<button onclick="read()">Choose Article</button>
 </form>
 </div>
 </div>
