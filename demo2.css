@@ -164,10 +164,6 @@ input[type=radio]:not(old):checked + label > span > span{
 	margin-top: 50px;
 }
 
-object{
-	margin-top: 170px;
-}
-
 input[type=text] {
     width: 400px;
     height: 75px;
